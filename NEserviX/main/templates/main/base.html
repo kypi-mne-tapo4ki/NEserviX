@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NEserviX - Программа для сервисных центров</title>
+    <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style_2.css'%}">
 </head>
 <body>
@@ -31,7 +31,7 @@
 
         <li><a href="">Магазин</a>
             <ul class="submenu">
-                <li><a href="">Новая продажа</a></li>
+                <li><a href="new_sale">Новая продажа</a></li>
                 <li><a href="">Все продажи</a></li>
             </ul>
         </li>
@@ -52,5 +52,6 @@
         </li>
   </ul>
 </nav>
+{% block content %}{% endblock %}
 </body>
 </html>

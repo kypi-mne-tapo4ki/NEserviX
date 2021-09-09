@@ -8,3 +8,7 @@ def index(request):
 def new_sale(request):
     return render(request, 'main/new_sale.html')
 
+
+def all_sales(request):
+    return render(request, 'main/all_sales.html')
+

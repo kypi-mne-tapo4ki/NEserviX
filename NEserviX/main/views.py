@@ -12,3 +12,6 @@ def new_sale(request):
 def all_sales(request):
     return render(request, 'main/all_sales.html')
 
+
+def all_orders(request):
+    return render(request, 'main/all_orders.html')

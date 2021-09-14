@@ -12,12 +12,12 @@
 <body>
 <nav>
     <ul class="topmenu">
-        <li><a href="">NEserviX</a></li>
+        <li><a href="{% url 'home' %}">NEserviX</a></li>
         <li><a href="">Ремонт</a>
             <ul class="submenu">
                 <li><a href="">Принять в ремонт</a></li>
                 <li><a href="">Принять картриджи</a></li>
-                <li><a href="">Все заказы</a></li>
+                <li><a href="{% url 'all_orders' %}">Все заказы</a></li>
             </ul>
         </li>
 
@@ -31,8 +31,8 @@
 
         <li><a href="">Магазин</a>
             <ul class="submenu">
-                <li><a href="new_sale">Новая продажа</a></li>
-                <li><a href="">Все продажи</a></li>
+                <li><a href="{% url 'new_sale' %}">Новая продажа</a></li>
+                <li><a href="{% url 'all_sales' %}">Все продажи</a></li>
             </ul>
         </li>
 
